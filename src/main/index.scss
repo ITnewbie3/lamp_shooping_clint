@@ -1,0 +1,43 @@
+#banner {
+    img {
+        width: 100%;
+    }
+}
+#product-list {
+    h2 {
+        padding: 30px 0;
+    }
+    #product-items {
+        display: flex;
+        flex-wrap: wrap;
+        .product-card {
+            width: 24%;
+            border:1px solid #ccc;
+            border-radius: 16px;
+            margin-bottom: 16px;
+            overflow: hidden;
+            &:not(:nth-child(4n+0)){
+                margin-right:1.3333%;
+            }
+            .product-img {
+                img {
+                    width: 100%;
+                }
+            }
+            .product-contents{
+                padding: 24px;
+                span {
+                    display: block;
+                }
+                .product-seller{
+                    padding-top: 16px;
+                    display: flex;
+                    align-items: center;
+                    img {
+                        width: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
